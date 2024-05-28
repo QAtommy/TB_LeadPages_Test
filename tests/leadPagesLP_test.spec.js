@@ -7,7 +7,7 @@ const { generateRandomString } = require('../util/misc_utils');
 
 let page;
 // generate a unique Landing page id for testing
-const randomLandingPageTitle = "LeadPages " + generateRandomString();
+const randomLandingPageTitle = "LeadpagesTest " + generateRandomString();
 
 test.describe.configure({ mode: 'serial' });
 

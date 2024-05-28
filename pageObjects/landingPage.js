@@ -18,6 +18,7 @@ class LandingPage {
       this.closeButton = page.getByLabel('Close', { exact: true });
       this.previewCheckErrorButton = page.getByRole('button', { name: 'Preview check error' });
       this.previewFrame = page.frameLocator('iframe[title="Preview"]');
+      this.boldButton = page.getByLabel('Bold');
     }
   
     async createLandingPage(title) {
@@ -33,7 +34,11 @@ class LandingPage {
       await this.guideText.hover();
       await this.editPopUpButton.click();
       await this.heading.click();
-      await this.proseMirrorInput.fill(newText);
+      // update text
+      await this.proseMirrorInput.fill(newText);   
+      // select and bold text
+      await this.proseMirrorInput.press('ControlOrMeta+a');
+      await this.boldButton.click();      
       await this.closeButton.click();
     }
   
