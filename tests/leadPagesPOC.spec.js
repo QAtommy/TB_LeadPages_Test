@@ -17,7 +17,6 @@ test('test basic landing page creation/editing', async ({ page }) => {
     await landingPage.editPopUpText('Enter Your Email to Get Your Free Guide');
     await landingPage.previewAndVerifyText('Enter Your Email to Get Your Free Guide');       
 
-
     /*await page.getByRole('link', { name: 'Landing Pages' }).click();
     await page.getByRole('link', { name: 'Create New Landing Page' }).click();
     await page.locator('div').filter({ hasText: /^Start BuildingPreviewBuster Business$/ }).getByRole('button').first().click();
@@ -38,5 +37,5 @@ test('test basic landing page creation/editing', async ({ page }) => {
 });
 
  test.afterAll(async () => {
-     // remove landing page created during the test
+     // remove landing page created during the testz
   });
