@@ -27,7 +27,10 @@ test('test basic landing page creation/editing', async () => {
     // sign in
     const loginPage = new LoginPage(page);
     await loginPage.goto();
-    await loginPage.login('tomsberg48@gmail.com', 'Iceman@323');    
+    
+    // making this repo public, so not providing my credentials
+    // any valid leadpages credentials should work
+    await loginPage.login('userName', 'password');    
 
     // create, edit and verify landing page popup text
     const landingPage = new LandingPage(page);
