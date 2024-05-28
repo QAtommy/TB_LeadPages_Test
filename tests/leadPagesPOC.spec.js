@@ -1,6 +1,6 @@
 // @ts-check
 const { test, expect, selectors } = require('@playwright/test');
-const { LoginPage } = require('../pageObjects/LoginPage');
+const { LoginPage } = require('../pageObjects/loginPage');
 const { LandingPage } = require('../pageObjects/landingPage');
 
 test('test basic landing page creation/editing', async ({ page }) => {   
