@@ -1,3 +1,6 @@
+/**
+ * handles the basic sign in
+ **/
 class LoginPage {
     constructor(page) {
       this.page = page;

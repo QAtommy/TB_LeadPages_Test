@@ -1,5 +1,8 @@
 const { expect } = require('@playwright/test');
 
+/**
+ * handles the page creation, popup text editing and confirming the text change
+ */
 class LandingPage {
     constructor(page) {
       this.page = page;
